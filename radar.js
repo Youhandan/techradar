@@ -64,12 +64,12 @@ radar.add(pv.Line)
 //Quadrant Ledgends
 var radar_quadrant_ctr=1;
 var quadrantFontSize = 18;
-var headingFontSize = 14;
+var headingFontSize = 17;
 var stageHeadingCount = 0;
 var lastRadius = 0;
 var lastQuadrant='';
 var spacer = 6;
-var fontSize = 10;
+var fontSize = 15;
 var total_index = 1;
 
 //TODO: Super fragile: re-order the items, by radius, in order to logically group by the rings.
@@ -112,8 +112,8 @@ for (var i = 0; i < radar_data.length; i++) {
             .top( radar_data[i].top + quadrantFontSize + spacer + (stageIdx * headingFontSize) + (offsetIndex * fontSize) )
             .text( radar_arcs[stageIdx].name)
             .strokeStyle( '#cccccc' )
-            .fillStyle( '#cccccc')                    
-            .font(headingFontSize + "px Courier New");
+            .fillStyle( '#cccccc' )
+            .font(headingFontSize + "px chalkboard");
 
     radar.add(pv.Label)             
         .left( radar_data[i].left )         
